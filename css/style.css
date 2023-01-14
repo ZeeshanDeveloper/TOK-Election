@@ -707,7 +707,100 @@ td.c7 {
     color: #3b5f2f;
     text-decoration: underline;
 }
+.result-wrap{
+    margin: 22px 0px;
+}
+.result-wrap .search-box{
+    display: grid;
+    grid-template-columns: 1fr 55px;
+    margin-bottom: 24px;
+}
+.result-wrap .search-box input{
+    line-height: 40px;
+    border: 1px solid #c6c6c6;
+    padding: 0px 18px;
+    border-radius: 25px 0px 0px 25px;
+}
+.result-wrap .search-box input:focus{
+    border: 1px solid #111;
+}
+.result-wrap .search-box span{
+    background: #c6c6c6;
+    color: white;
+    text-align: center;
+    padding: 10px 5px 0px 0px;
+    border-radius: 0px 25px 25px 0px;
+    cursor: pointer;
+}
+.result-wrap .search-box span:hover{
+    background: #b2aeae;
+}
+.result-wrap .search-box span svg{
+    fill: black;
+    width: 18px;
+    height: 18px;
+}
+.result-wrap .result-box{
+    background-color: #e9f0f2;
+    border-radius: 13px;
+    padding: 30px 32px;
+    margin-bottom: 40px;
+}
+.result-wrap .result-box .title{
+    font-size: 25px;
+    color: #111;
+    margin-bottom: 12px;
+}
+.result-wrap .result-box .title-dis{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.result-wrap .result-box .election-name{
+    width: calc(100% + 64px);
+    padding: 12px 32px;
+    margin-left: -32px;
+    background-color: #df1e2d;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.result-wrap .table-wrap{
 
+}
+.result-wrap table {
+    width: 100%;
+    text-align: left;
+    font-weight: 400 !important;
+}
+.result-wrap table thead th{
+    border: 1px solid #1b470c;
+    background-color: #3b5f2f;
+    color: white;
+    padding: 10px 12px;
+    font-weight: 400 !important;
+    text-align: center;
+}
+.result-wrap table td{
+    padding: 10px 12px;
+    text-align: center;
+    font-weight: 400 !important;
+}
+.result-wrap table tr td:first-child{
+    text-align: left;
+}
+.result-wrap table td h5{
+    font-weight: 400 !important;
+}
+.result-wrap .parties-result {
+    background-color: #e9f0f2;
+    border-radius: 13px;
+    padding: 30px 32px;
+}
+.result-wrap .parties-result h3{
+    font-size: 18px;
+    color: #111;
+    text-align: center;
+    margin-bottom: 14px;
+}
 
 
 
@@ -781,6 +874,9 @@ td.c7 {
     .side .list ul li {
         font-size: 15px;
     }
+    .result-wrap .table-wrap{
+        overflow: auto;
+    }
 }
 @media (max-width:567px) {
     .page-title {
@@ -846,6 +942,30 @@ td.c7 {
         margin-bottom: 30px;
     }
     
+    .result-wrap .result-box{
+        padding: 18px 16px;
+    }
+    .result-wrap .result-box .title {
+        font-size: 20px;
+    }
+    .result-wrap .parties-result{
+        padding: 20px 20px;
+    }
+    .result-wrap .parties-result h3 {
+        font-size: 15px;
+    }
+    .result-wrap table{
+        font-size: 14px;
+    }
+    .result-wrap .result-box .election-name {
+        width: calc(100% + 30px);
+        padding: 12px 19px;
+        margin-left: -15px;
+    }
+    .result-wrap table thead th {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
 }
 
 
@@ -935,12 +1055,9 @@ td.c7 {
 
 .content p.coming__soon {
     text-align: center;
-    font-size: 2.5rem;
-    width: 60%;
-    margin: 80px auto;
-    border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
-    padding: 40px 0px;
+    font-size: 19px;
+    margin: auto;
+    padding: 34px 0px;
 }
 
 .content table {
